@@ -1,2 +1,2 @@
 # how-about-a-go
-Presentation on Golang
+Presentation on Golang for That Conference
