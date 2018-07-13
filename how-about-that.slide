@@ -2,16 +2,16 @@
 # Present files have the following format. 
 # The first non-blank non-comment line is the title.
 # The subtitle, date, and tags lines are optional.
-Title of document
-Subtitle of document
-21:32 12 Jul 2018
-Tags: foo, bar, baz
+How about a Go?
+That Conference
+6 Aug 2018
+Tags: golang, ThatConference, projects
 
-Author Name
-Job title, Company
-joe@example.com
-http://url/
-@twitter_name
+Ross Larson
+Software Developer, WTS Paradigm
+rosslarson@gmail.com
+http://about.me/rosslarson
+@rosslarsonWI
 
 * Section1
 
