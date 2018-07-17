@@ -31,10 +31,10 @@ http://about.me/rosslarson
 .background images/Go-Logo_Blue.svg
 
 * Hello World
-.play code/hello-world.go
+.play code/hello/hello-world.go
 
 * Variables and Types
-.play code/data-types.go
+.play code/types/data-types.go
 
 * Pros and Cons
 .background images/Go-Logo_Blue.svg
