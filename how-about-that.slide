@@ -33,6 +33,9 @@ http://about.me/rosslarson
 * Hello World
 .play code/hello-world.go
 
+* Variables and Types
+.play code/data-types.go
+
 * Pros and Cons
 .background images/Go-Logo_Blue.svg
 
