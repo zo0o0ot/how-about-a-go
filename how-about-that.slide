@@ -13,6 +13,7 @@ rosslarson@gmail.com
 http://about.me/rosslarson
 @rosslarsonWI
 
+
 * Agenda
 - Stuff
 - Other Stuff
@@ -21,15 +22,25 @@ http://about.me/rosslarson
 - Projects
 
 * History of Golang
+.background images/Go-Logo_Blue.svg
 
 * Projects that use Golang
+.background images/Go-Logo_Blue.svg
 
 * General language overview
+.background images/Go-Logo_Blue.svg
+
+* Hello World
+.play code/hello-world.go
 
 * Pros and Cons
+.background images/Go-Logo_Blue.svg
 
 * Tools of the Trade
+.background images/Go-Logo_Blue.svg
 
 * Suggested Projects
+.background images/Go-Logo_Blue.svg
 
 * Questions?
+.background images/Go-Logo_Blue.svg
