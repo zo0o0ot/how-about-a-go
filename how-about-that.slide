@@ -36,6 +36,9 @@ http://about.me/rosslarson
 * Variables and Types
 .play code/types/data-types.go
 
+* Arrays
+.play code/arrays-slices/arrays-slices.go
+
 * Pros and Cons
 .background images/Go-Logo_Blue.svg
 
