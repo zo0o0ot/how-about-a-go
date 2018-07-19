@@ -38,6 +38,7 @@ http://about.me/rosslarson
 
 * General language overview
 .background images/Go-Logo_Blue.svg
+: Enough talk, let's look at some code.
 
 * Hello World
 .play -edit code/hello/hello-world.go
