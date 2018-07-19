@@ -24,6 +24,10 @@ http://about.me/rosslarson
 * History of Golang
 .background images/Go-Logo_Blue.svg
 
+* The Go Gopher
+.image images/gopher.svg
+: The Go Gopher was introduced when Golang was open sourced in 2009. It was designed by Renee French. https://blog.golang.org/gopher
+
 * Projects that use Golang
 .background images/Go-Logo_Blue.svg
 
