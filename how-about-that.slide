@@ -31,7 +31,7 @@ http://about.me/rosslarson
 .background images/Go-Logo_Blue.svg
 
 * Hello World
-.play code/hello/hello-world.go
+.play -edit code/hello/hello-world.go
 
 * Variables and Types
 .play code/types/data-types.go
