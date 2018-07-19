@@ -6,6 +6,8 @@ How about a Go?
 That Conference
 6 Aug 2018
 Tags: golang, ThatConference, projects
+: Welcome to my session.
+
 
 Ross Larson
 Software Developer, WTS Paradigm
@@ -13,16 +15,18 @@ rosslarson@gmail.com
 http://about.me/rosslarson
 @rosslarsonWI
 
-
 * Agenda
-- Stuff
-- Other Stuff
-- Still More Stuff
-- Jokes
-- Projects
+- The History of Golang
+- Projects that use Golang
+- General language overview
+- Pros and Cons of Golang
+- Tools to code with Go
+- Project suggestions
+: We are going over some stuff here.  It is going to be awesome.
 
 * History of Golang
 .background images/Go-Logo_Blue.svg
+: There is some history here.  It started at Google in 2007.  Other stuff too.
 
 * The Go Gopher
 .image images/gopher.svg
@@ -30,15 +34,20 @@ http://about.me/rosslarson
 
 * Projects that use Golang
 .background images/Go-Logo_Blue.svg
+: It's not just a toy.  Some serious projects use this language.
 
 * General language overview
 .background images/Go-Logo_Blue.svg
 
 * Hello World
 .play -edit code/hello/hello-world.go
+: Here's some go code. It contains a package, import statements, and a main function.
 
 * Variables and Types
 .play code/types/data-types.go
+: Here's some variables and data types. There are a few of them. bool, string, int, int8, int16, int32, int64, uint, uint8, uint16, uint32, uint64, uintptr, byte, rune, float32, float64, complex64, complex128
+: Rune is an int32 code point.  It's got something to do with how Go handles UTF-8 characters. For more info on strings and characters - https://blog.golang.org/strings
+: unitptr is an integer type that is large enough to hold the bit pattern of any pointer. https://golang.org/pkg/builtin/#uintptr
 
 * Arrays
 .play code/arrays-slices/arrays-slices.go
