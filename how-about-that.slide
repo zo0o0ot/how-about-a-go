@@ -51,7 +51,10 @@ http://about.me/rosslarson
 : unitptr is an integer type that is large enough to hold the bit pattern of any pointer. https://golang.org/pkg/builtin/#uintptr
 
 * Arrays
-.play code/arrays-slices/arrays-slices.go
+.play code/arrays/arrays.go /^func arraysDemo/,/^}/
+
+* Slices
+.play code/slices/slices.go /^func slicesDemo/,/^}/
 
 * Pros and Cons
 .background images/Go-Logo_Blue.svg
