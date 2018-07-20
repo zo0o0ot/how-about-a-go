@@ -10,10 +10,12 @@ func slicesDemo() {
 	ro := make([]string, len(ri))
 	copy(ro, ri)
 	ro = append(ro, "down")
-	ri = append(ri, "up")
+	ri = append(ri, "up", "up", "down", "down")
+	ri = append(ri, "left", "right", "left", "right", "b", "a", "start")
 	ro[2] = "let"
 	ri[2] = "give"
-	fmt.Println(ri)
+	fmt.Println(ri[4:])
+	fmt.Println(ri[:5])
 	fmt.Println(ro)
 }
 

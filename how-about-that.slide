@@ -52,9 +52,11 @@ http://about.me/rosslarson
 
 * Arrays
 .play code/arrays/arrays.go /^func arraysDemo/,/^}/
+: In go, arrays are slightly more limited than in other languages.  Once they have been created, their length cannot be changed.  Nothing can be appended to them, but the values inside of the array can be changed.
 
 * Slices
 .play code/slices/slices.go /^func slicesDemo/,/^}/
+: Slices are a more flexible alternative to arrays.  
 
 * Pros and Cons
 .background images/Go-Logo_Blue.svg
