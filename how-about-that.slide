@@ -59,7 +59,8 @@ http://about.me/rosslarson
 : Slices are a more flexible alternative to arrays. You can append to them, as well as copy them. They are zero indexed, like arrays.  When you want to refer to them, the variable gives you the whole object, or you can specify a range.  Range works similar to arrays.
 
 * Maps
-: Maps are a key value store.  They are similar to slices, but you can name the keys instead of needed to use numbers.  They are like dictionaries in python.
+.play code/maps/maps.go /^func showSomeMaps/,/^}/
+: Maps are a key value store.  They are similar to slices, but you can name the keys instead of needed to use numbers.  They are like dictionaries in python and HashMaps in C#.
 
 * Pros and Cons
 .background images/Go-Logo_Blue.svg
