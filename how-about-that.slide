@@ -60,7 +60,7 @@ http://about.me/rosslarson
 
 * Maps
 .play code/maps/maps.go /^func showSomeMaps/,/^}/
-: Maps are a key value store.  They are similar to slices, but you can name the keys instead of needed to use numbers.  They are like dictionaries in python and HashMaps in C#.
+: Maps are a key value store.  They are similar to slices, but you can name the keys instead of needed to use numbers.  They are like dictionaries in python and HashMaps in C#. Maps do not store these key/value pairs in any particular order, so if you print out the whole map, the order of the keys will vary.
 
 * Pros and Cons
 .background images/Go-Logo_Blue.svg
