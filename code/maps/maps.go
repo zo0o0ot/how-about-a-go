@@ -20,7 +20,7 @@ func showSomeMaps() {
 	strangemap[42] = []string{"The", "Answer", "To", "Life, the Universe, and Everything is", fmt.Sprintf("%c", 42)}
 
 	fmt.Println("Roll for initiative with d20?", isPresent)
-	fmt.Println(itsamap)
+	fmt.Println(itsamap, len(itsamap))
 	fmt.Println(strangemap)
 
 }
