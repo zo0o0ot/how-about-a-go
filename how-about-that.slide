@@ -90,11 +90,16 @@ http://about.me/rosslarson
 * Pros and Cons of Golang
 .background images/Go-Logo_Blue.svg
 
+* Pros
+.image images/go-gopher.gif
+: Let's start with the Pros.  This may be highly subjective.
+
 * Coding Standards and Formatting suggestions
--gofmt()
+- gofmt()
+- "Idiomatic Go"
 
 : Golang has clearly defined standards and formatting suggestions.  There's even a command called `gofmt()` that will format your code the "correct" way.  Many golang editors will do this automatically as you save the file.
-: The language was designed to have "one correct way" of doing things, which is referred to as "idiomatic Go".
+: The language was designed to have "one correct way" of doing things, which is referred to as "Idiomatic Go". One of the stated goals was to make legacy code easier to read and maintain.
 
 * Tools of the Trade
 .background images/Go-Logo_Blue.svg
