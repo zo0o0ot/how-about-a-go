@@ -50,7 +50,7 @@ http://about.me/rosslarson
 : Rune is an int32 code point.  It's got something to do with how Go handles UTF-8 characters. For more info on strings and characters - https://blog.golang.org/strings
 : unitptr is an integer type that is large enough to hold the bit pattern of any pointer. https://golang.org/pkg/builtin/#uintptr
 
-* Functions and Return values
+* Functions and Return Values
 .play code/multiple-returns/multiple-returns.go
 : Functions are a thing.  They start with func. They can return nothing, one value, or multiple values.
 
@@ -65,6 +65,10 @@ http://about.me/rosslarson
 * Maps
 .play code/maps/maps.go /^func showSomeMaps/,/^}/
 : Maps are a key value store.  They are similar to slices, but you can name the keys instead of needed to use numbers.  They are like dictionaries in python and HashMaps in C#. Maps do not store these key/value pairs in any particular order, so if you print out the whole map, the order of the keys will vary.
+
+* Errors at Compilation
+.play code/compilation-error/compilation-error.go
+: Go is relatively picky when it compiles.  It would prefer to tell you about problems as you compile your code as opposed to when you execute your code.
 
 * Pros and Cons
 .background images/Go-Logo_Blue.svg
