@@ -50,6 +50,10 @@ http://about.me/rosslarson
 : Rune is an int32 code point.  It's got something to do with how Go handles UTF-8 characters. For more info on strings and characters - https://blog.golang.org/strings
 : unitptr is an integer type that is large enough to hold the bit pattern of any pointer. https://golang.org/pkg/builtin/#uintptr
 
+* Functions and Return values
+.play code/multiple-returns/multiple-returns.go
+: Functions are a thing.  They start with func. They can return nothing, one value, or multiple values.
+
 * Arrays
 .play code/arrays/arrays.go /^func arraysDemo/,/^}/
 : In go, arrays are slightly more limited than in other languages.  Once they have been created, their length cannot be changed.  Nothing can be appended to them, but the values inside of the array can be changed. You can also refer to the range inside of an array like [x:y], but you have to note that the array position in the beginning of the array is included, but the array position at the end gives you everythig UNTIL that array position, NOT INCLUDING the given number.  You can also omit the number to go to either the upper or lower limit.
