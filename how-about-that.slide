@@ -101,6 +101,9 @@ http://about.me/rosslarson
 : Golang has clearly defined standards and formatting suggestions.  There's even a command called `gofmt()` that will format your code the "correct" way.  Many golang editors will do this automatically as you save the file.
 : The language was designed to have "one correct way" of doing things, which is referred to as "Idiomatic Go". One of the stated goals was to make legacy code easier to read and maintain.
 
+* Cons
+: It's not all sunshine and rainbows here.
+
 * Tools of the Trade
 .background images/Go-Logo_Blue.svg
 
