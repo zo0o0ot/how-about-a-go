@@ -19,7 +19,7 @@ func showSomeMaps() {
 	strangemap := make(map[rune][]string)
 	strangemap[42] = []string{"The", "Answer", "To", "Life, the Universe, and Everything is", fmt.Sprintf("%c", 42)}
 
-	fmt.Println("\nRoll for initiative with d20?", isPresent, "\n")
+	fmt.Println("Roll for initiative with d20?", isPresent)
 	fmt.Println(itsamap)
 	fmt.Println(strangemap)
 
