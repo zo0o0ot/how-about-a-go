@@ -5,20 +5,21 @@ import (
 )
 
 func showSomeMaps() {
-	itsamap := make(map[string]int)
-	itsamap["a"] = 1
-	itsamap["b"] = 52
-	itsamap["c"] = 4
-	itsamap["d"] = 20
+	itsamap := make(map[string]int) // Initialize the map.
+	itsamap["a"] = 1                // Steak Sauce
+	itsamap["b"] = 52               // Love Shack
+	itsamap["c"] = 4                // Boom
+	itsamap["d"] = 20               // Natural 20! Woo!
 
 	fmt.Println(itsamap)
-	delete(itsamap, "d")         //
-	_, isPresent := itsamap["d"] // Note the two return values.
-	// Also "_" refers to a variable that we are going to ignore.
+	delete(itsamap, "d")         // Delete from a map by referring to its key.
+	_, isPresent := itsamap["d"] // "_" refers to the first variable,  which we are going to ignore.
+	// Note the two return values for the map. The second value returns if the key is present in the map.
 
-	strangemap := make(map[rune]string)
+	strangemap := make(map[rune][]string)
+	strangemap[42] = []string{"The", "Answer", "To", "Life, the Universe, and Everything is", fmt.Sprintf("%c", 42)}
 
-	fmt.Println("Roll for initiative with d20?", isPresent)
+	fmt.Println("\nRoll for initiative with d20?", isPresent, "\n")
 	fmt.Println(itsamap)
 	fmt.Println(strangemap)
 
