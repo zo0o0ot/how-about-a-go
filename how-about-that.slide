@@ -70,8 +70,31 @@ http://about.me/rosslarson
 .play -edit code/compilation-error/compilation-error.go
 : Go is relatively picky when it compiles.  It would prefer to tell you about problems as you compile your code as opposed to when you execute your code.
 
-* Pros and Cons
+* Testing
+- woo.go
+.play code/builtin-testing/woo.go /^func Woo/,/^}/
+- woo_test.go
+.code code/builtin-testing/woo_test.go
+: Testing is built into go. If you create a file with the same name and append "_test" to the file, it can automatically run the tests. Test functions have the word test before them. For more info - https://golang.org/pkg/testing/ 
+: The Go compiler and linker will not ship your test files in any binaries it produces.
+
+* Pointers
+: Pointer notes.  
+
+* Interfaces
+: Interface notes.
+
+* Concurrency
+: Concurrency notes.
+
+* Pros and Cons of Golang
 .background images/Go-Logo_Blue.svg
+
+* Coding Standards and Formatting suggestions
+-gofmt()
+
+: Golang has clearly defined standards and formatting suggestions.  There's even a command called `gofmt()` that will format your code the "correct" way.  Many golang editors will do this automatically as you save the file.
+: The language was designed to have "one correct way" of doing things, which is referred to as "idiomatic Go".
 
 * Tools of the Trade
 .background images/Go-Logo_Blue.svg
