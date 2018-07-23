@@ -80,13 +80,17 @@ http://about.me/rosslarson
 
 * Pointers
 .play code/pointers/pointers.go
-: Pointers are a thing in go. They point to another variable in memory. 
+: Pointers are a thing in go. They point to another variable in memory. They can even point to another pointer.
+: References exist in Go, as well.  It's cool, but it's also a bit confusing. Pointers are more powerful, and appear to be used more often in Go code. There's an article that explains the difference. http://spf13.com/post/go-pointers-vs-references/
 
 * Interfaces
-: Interface notes.
+: Interface notes. https://golang.org/doc/effective_go.html#interfaces_and_types
+
+* Structs
+: Struct notes.  Comparing structs to objects. https://golangbot.com/structs-instead-of-classes/
 
 * Concurrency
-: Concurrency notes.
+: Concurrency notes.  https://www.golang-book.com/books/intro/10   Probably need to explain routines as well- https://tour.golang.org/concurrency/1
 
 * Pros and Cons of Golang
 .background images/Go-Logo_Blue.svg
