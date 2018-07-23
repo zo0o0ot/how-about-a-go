@@ -79,6 +79,7 @@ http://about.me/rosslarson
 : The Go compiler and linker will not ship your test files in any binaries it produces.
 
 * Pointers
+.play code/pointers/pointers.go
 : Pointer notes.  
 
 * Interfaces
