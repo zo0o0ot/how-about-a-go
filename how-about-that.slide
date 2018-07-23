@@ -66,6 +66,13 @@ http://about.me/rosslarson
 .play code/maps/maps.go /^func showSomeMaps/,/^}/
 : Maps are a key value store.  They are similar to slices, but you can name the keys instead of needed to use numbers.  They are like dictionaries in python and HashMaps in C#. Maps do not store these key/value pairs in any particular order, so if you print out the whole map, the order of the keys will vary.
 
+* Structs
+: Struct notes.  Comparing structs to objects. https://golangbot.com/structs-instead-of-classes/
+
+* Errors and nil
+: You may have noticed that go functions allow multiple return items.  Go takes full advantage of this for its error handling system. Most functions return an error all of the time, assigning it to "nil", which is equivalent to null.  When the error does exist, you can handle the error appropriately, and you can create your own error message which includes customizable information. You can return a struct in an error.
+: Go error documentation - https://golang.org/pkg/errors/
+
 * Errors at Compilation
 .play -edit code/compilation-error/compilation-error.go
 : Go is relatively picky when it compiles.  It would prefer to tell you about problems as you compile your code as opposed to when you execute your code.
@@ -78,6 +85,7 @@ http://about.me/rosslarson
 : Testing is built into go. If you create a file with the same name and append "_test" to the file, it can automatically run the tests. Test functions have the word test before them. For more info - https://golang.org/pkg/testing/ 
 : The Go compiler and linker will not ship your test files in any binaries it produces.
 
+
 * Pointers
 .play code/pointers/pointers.go
 : Pointers are a thing in go. They point to another variable in memory. They can even point to another pointer.
@@ -85,9 +93,6 @@ http://about.me/rosslarson
 
 * Interfaces
 : Interface notes. https://golang.org/doc/effective_go.html#interfaces_and_types
-
-* Structs
-: Struct notes.  Comparing structs to objects. https://golangbot.com/structs-instead-of-classes/
 
 * Concurrency
 : Concurrency notes.  https://www.golang-book.com/books/intro/10   Probably need to explain routines as well- https://tour.golang.org/concurrency/1
