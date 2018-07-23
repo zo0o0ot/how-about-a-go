@@ -80,7 +80,7 @@ http://about.me/rosslarson
 
 * Pointers
 .play code/pointers/pointers.go
-: Pointer notes.  
+: Pointers are a thing in go. They point to another variable in memory. 
 
 * Interfaces
 : Interface notes.
