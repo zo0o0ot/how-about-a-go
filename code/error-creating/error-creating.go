@@ -5,9 +5,12 @@ import (
 	"fmt"
 )
 
+func alwaysErrors() (string, error) {
+	return "I AM ERROR", errors.New("Error: Conference Foul- Not enough memes")
+}
+
 func main() {
-	fmt.Println("OK")
-	err := errors.New("Conference Foul: Too many words")
+	_, err := alwaysErrors()
 	if err != nil {
 		fmt.Println(err)
 	}

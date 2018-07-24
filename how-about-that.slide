@@ -90,6 +90,7 @@ http://about.me/rosslarson
 : Concurrency notes.  It's built into Go. https://www.golang-book.com/books/intro/10   Probably need to explain routines as well- https://tour.golang.org/concurrency/1
 
 * Errors and nil
+.play code/error-creating/error-creating.go
 : You may have noticed that go functions allow multiple return items.  Go takes full advantage of this for its error handling system. Most functions return an error all of the time, assigning it to "nil", which is equivalent to null.  When the error does exist, you can handle the error appropriately. You can create your own error message which includes customizable information.
 : Go error documentation - https://golang.org/pkg/errors/ and https://golang.org/doc/effective_go.html#errors
 
