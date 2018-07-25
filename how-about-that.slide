@@ -67,6 +67,7 @@ http://about.me/rosslarson
 - Hugo
 .background images/Go-Logo_Blue.svg
 : Despite the goofy gopher, this is a language that can solve some serious problems.  Some impressive projects use this language, with Docker probably being one of the most popular examples.
+: Hugo was what got me interested in Golang.
 : Go project wiki -https://github.com/golang/go/wiki/Projects
 
 * General language overview
@@ -75,7 +76,7 @@ http://about.me/rosslarson
 
 * Hello World
 .play -edit code/hello/hello-world.go
-: Here's some go code. It contains a package, import statements, and a main function.
+: Here's some go code. It contains a package, import statements, and a main function.  Note the native support of UTF-8.
 
 * Variables and Types
 .play code/types/data-types.go
