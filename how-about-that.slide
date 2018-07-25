@@ -116,7 +116,8 @@ http://about.me/rosslarson
 : References exist in Go, as well. Pointers are more powerful and flexible, and appear to be used more often in Go code. I believe it has to do with being able to reassign a pointer, but not a reference. There's an article that explains the difference. http://spf13.com/post/go-pointers-vs-references/
 
 * Structs
-: Struct notes.  Comparing structs to objects. https://golangbot.com/structs-instead-of-classes/
+.play code/structs/structs.go
+: A struct is a collection of fields.  Comparing structs to objects. https://golangbot.com/structs-instead-of-classes/
 
 * Interfaces
 : Interface notes. https://golang.org/doc/effective_go.html#interfaces_and_types
