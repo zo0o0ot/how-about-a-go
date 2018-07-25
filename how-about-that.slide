@@ -46,8 +46,7 @@ http://about.me/rosslarson
 - Robert Griesemer (Java Hotspot VM, Google V8 JS engine)
 .image images/RobertRobAndKen.jpg
 : The three main inventors of were three Engineers that were working at Google (after having done some pretty impressive things in their past)
-: According to Ken Thompson, here's what happened.
-: When the three of us [Thompson, Rob Pike, and Robert Griesemer] got started, it was pure research. The three of us got together and decided that we hated C++. [laughter] ... [Returning to Go,] we started off with the idea that all three of us had to be talked into every feature in the language, so there was no extraneous garbage put into the language for any reason. 
+: According to Ken Thompson, here's what happened "When the three of us [Thompson, Rob Pike, and Robert Griesemer] got started, it was pure research. The three of us got together and decided that we hated C++. [laughter] ... [Returning to Go,] we started off with the idea that all three of us had to be talked into every feature in the language, so there was no extraneous garbage put into the language for any reason."
 : They started working on the language internally in 2007, open sourced the language in 2009, and released version 1 of Golang in 2012.  The current version of Go is 1.10, and 1.11 is due to come out in August. Releases seem to come out every six months or so.
 : 1.11 draft release notes - https://tip.golang.org/doc/go1.11
 
