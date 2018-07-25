@@ -3,12 +3,12 @@ package main
 import "fmt"
 
 func slicesDemo() {
-	ri := make([]string, 4)
+	ri := make([]string, 4) //Creates four strings that are empty ""
 	ri[0] = "never"
 	ri[3] = "you"
 	ri[1] = "gonna"
 	ro := make([]string, len(ri))
-	copy(ro, ri)
+	copy(ro, ri) // Copies contents from one slice into the other.
 	ro = append(ro, "down")
 	ri = append(ri, "up", "up", "down", "down")
 	ri = append(ri, "left", "right", "left", "right", "b", "a", "start")

@@ -104,6 +104,7 @@ http://about.me/rosslarson
 * Slices
 .play code/slices/slices.go /^func slicesDemo/,/^}/
 : Slices are a more flexible alternative to arrays. You can append to them, as well as copy them. They are zero indexed, like arrays.  When you want to refer to them, the variable gives you the whole object, or you can specify a range.  Range works similar to arrays.
+: Note that there is not an easy way to remove from the middle of a slice - Link to slice tricks https://github.com/golang/go/wiki/SliceTricks
 
 * Maps
 .play code/maps/maps.go /^func showSomeMaps/,/^}/
