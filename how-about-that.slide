@@ -17,7 +17,7 @@ http://about.me/rosslarson
 
 * 
 .background images/ThatBranding.png
-: Welcome!
+: Welcome to my session!
 
 * 
 .background images/ThoseSponsors.png
@@ -35,14 +35,30 @@ http://about.me/rosslarson
 * History of Golang
 .background images/Go-Logo_Blue.svg
 : There is some history here.  It started at Google in 2007.  Other stuff too.
+: The authors of Go noticed several trends in the last 10 years or so that Systems Languages were not easily able to take advantage of.
+: Computers are enormously quicker but software development is not faster.
+: Multi-core systems are more common, but it is difficult to write software that takes advantage of the additional resources.
+: Some fundamental concepts such as garbage collection and parallel computation are not well supported by popular systems languages.
+
+* Creators of Golang
+- Ken Thompson (B, C, UTF-8, Unix)
+- Rob Pike (UTF-8, Plan 9)
+- Robert Griesemer (Java Hotspot VM, Google V8 JS engine)
+.image images/RobertRobAndKen.jpg
+: The three main inventors of were three Engineers that were working at Google (after having done some pretty impressive things in their past)
+: According to Ken Thompson, here's what happened.
+: When the three of us [Thompson, Rob Pike, and Robert Griesemer] got started, it was pure research. The three of us got together and decided that we hated C++. [laughter] ... [Returning to Go,] we started off with the idea that all three of us had to be talked into every feature in the language, so there was no extraneous garbage put into the language for any reason. 
+: They started working on the language internally in 2007, open sourced the language in 2009, and released version 1 of Golang in 2012.  The current version of Go is 1.10, and 1.11 is due to come out in August. Releases seem to come out every six months or so.
+: 1.11 draft release notes - https://tip.golang.org/doc/go1.11
 
 * The Go Gopher
+.background images/blue-background.jpg
 .image images/gopher.svg
 : The Go Gopher was introduced when Golang was open sourced in 2009. It was designed by Renee French. https://blog.golang.org/gopher
 
 * Projects that use Golang
 .background images/Go-Logo_Blue.svg
-: It's not just a toy.  Some serious projects use this language.
+: Despite the goofy gopher, this is a language that can solve some serious problems.  Some serious projects use this language.
 
 * General language overview
 .background images/Go-Logo_Blue.svg
@@ -117,10 +133,16 @@ http://about.me/rosslarson
 : Testing is built into go. If you create a file with the same name and append "_test" to the file, it can automatically run the tests. Test functions have the word test before them. For more info - https://golang.org/pkg/testing/ 
 : The Go compiler and linker will not ship your test files in any binaries it produces.
 
+* Debugging with Delve
+.background images/blue-background.jpg
+.image images/delve.png _ 900
+: Go has a tool called delve that helps with debugging of your go code. https://github.com/derekparker/delve
+
 * Pros and Cons of Golang
 .background images/Go-Logo_Blue.svg
 
 * Pros
+.background images/blue-background.jpg
 .image images/go-gopher.gif
 : Let's start with the Pros.  This may be highly subjective.
 
@@ -140,7 +162,9 @@ http://about.me/rosslarson
 * Editors
 : There are a few options for Go development.  I've been doing most of my coding with Visual Studio Code and the associated golang plugins. https://code.visualstudio.com/docs/languages/go
 : I gave Goland, the JetBrains Go IDE, a try.  It seemed nice, but it may be a little heavier than I needed as a beginning dev.  It's possible that it does some things better, such as debugging or refactoring. https://www.jetbrains.com/go/
-: LiteIDE is a cross-platform editor for Go that's under development.  One thing that s nice about it is that it does syntax highlighting of Go's slide format. I used it for that.
+: LiteIDE is a cross-platform editor for Go that's under development.  One thing that s nice about it is that it does syntax highlighting of Go's slide format. I used it for that. https://github.com/visualfc/liteide
+: Limetext is an open-source alternative to SublimeText that is written in Go.  It's still under development and nt ready for daily use, but it looks very promising.  http://limetext.org/
+: Official wiki of Go Editors and IDEs: https://github.com/golang/go/wiki/IDEsAndTextEditorPlugins
 
 * Suggested Projects
 .background images/Go-Logo_Blue.svg
