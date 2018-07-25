@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+// Location - similar to storing a GPS location
 type Location struct {
 	lat  float64
 	long float64
