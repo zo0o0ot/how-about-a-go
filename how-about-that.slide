@@ -88,14 +88,14 @@ http://about.me/rosslarson
 .play code/multiple-returns/multiple-returns.go
 : Functions are a thing.  They start with func. They can return nothing, one value, or multiple values.
 
-* If and Else
-: If and else work like most other languages.
+* If, Else, and Switch
+.play -edit code/if-else-switch/if-else-switch.go /^func itsNine/,/^}/
+: If, Else, and Switch statements work like most other languages.  The parentheses are not required, but the braces are. One note - There is no ternary if (?:) in Go. You have to write out the whole if statement.
 
 * For loops
-: For loops are pretty versatile in Go.
-
-* For, continued
-: For is also Go's while.  You can also create infinite loops
+.play -edit code/for-loops/for-loops.go /^func theCount/,/^}/
+: For loops are pretty versatile in Go. It does "for declaration;condition;incrementer".  However, you can omit some or all of these arguments.
+: Therefore, for is also Go's while.  Be careful for infinite loops! I made at least one while creating this sample code.
 
 * Arrays
 .play code/arrays/arrays.go /^func arraysDemo/,/^}/
