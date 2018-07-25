@@ -112,8 +112,8 @@ http://about.me/rosslarson
 
 * Pointers
 .play code/pointers/pointers.go
-: Pointers are a thing in go. They point to another variable in memory. They can even point to another pointer.
-: References exist in Go, as well.  It's cool, but it's also a bit confusing. Pointers are more powerful, and appear to be used more often in Go code. There's an article that explains the difference. http://spf13.com/post/go-pointers-vs-references/
+: Pointers are a thing in go. They point to another variable in memory. They can even point to another pointer. Garbage collection of pointers is automatic.
+: References exist in Go, as well. Pointers are more powerful and flexible, and appear to be used more often in Go code. I believe it has to do with being able to reassign a pointer, but not a reference. There's an article that explains the difference. http://spf13.com/post/go-pointers-vs-references/
 
 * Structs
 : Struct notes.  Comparing structs to objects. https://golangbot.com/structs-instead-of-classes/
@@ -150,7 +150,7 @@ http://about.me/rosslarson
 : Go has a tool called delve that helps with debugging of your go code. https://github.com/derekparker/delve
 : You can use it on the command line with `dlv debug`. There are also plugins for most Go editors. https://github.com/derekparker/delve/blob/master/Documentation/EditorIntegration.md
 : Delve supports both local and remote debugging.
-: I'm going to show off the "slices" code in Visual Studio Code with the Delve Plugin.
+: I'm going to show off the "slices" code in Visual Studio Code with the Delve Plugin. Note- there is currently a bug where VS Code force quits delve before it can clean up debug files.  They are working on fixing that soon.  https://github.com/Microsoft/vscode-go/issues/1797
 
 * Pros and Cons of Golang
 .background images/Go-Logo_Blue.svg
@@ -172,12 +172,10 @@ http://about.me/rosslarson
 
 * Tools of the Trade
 .background images/Go-Logo_Blue.svg
-
-* Editors
-: There are a few options for Go development.  I've been doing most of my coding with Visual Studio Code and the associated golang plugins. https://code.visualstudio.com/docs/languages/go
+: There are a few options for Go development.  I've been doing most of my coding with Visual Studio Code and the associated golang plugins. https://code.visualstudio.com/docs/languages/go  Atom has similar extensions, but VS Code seemed to work for my needs.
 : I gave Goland, the JetBrains Go IDE, a try.  It seemed nice, but it may be a little heavier than I needed as a beginning dev.  It's possible that it does some things better, such as debugging or refactoring. https://www.jetbrains.com/go/
 : LiteIDE is a cross-platform editor for Go that's under development.  One thing that s nice about it is that it does syntax highlighting of Go's slide format. I used it for that. https://github.com/visualfc/liteide
-: Limetext is an open-source alternative to SublimeText that is written in Go.  It's still under development and nt ready for daily use, but it looks very promising.  http://limetext.org/
+: (Don't mention this one) Limetext is an open-source alternative to SublimeText that is written in Go.  It's still under development and nt ready for daily use, but it looks very promising.  http://limetext.org/
 : Official wiki of Go Editors and IDEs: https://github.com/golang/go/wiki/IDEsAndTextEditorPlugins
 
 * Suggested Projects
@@ -190,3 +188,10 @@ http://about.me/rosslarson
 * 
 .background images/ThatConference2019.png
 : See you next year!
+
+* Resources for learning Go
+- A Tour of Go
+- Go By Example
+- Just for Func
+: There are both free and paid resources for learning Go. I focused a lot of my learning on the Tour of Go () and Go By Example ()
+: 
