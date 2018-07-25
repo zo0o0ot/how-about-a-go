@@ -18,6 +18,7 @@ http://about.me/rosslarson
 * 
 .background images/ThatBranding.png
 : Welcome to my session!
+: As a note, there is going to be some code on slides in my session.  I am unable to change the size of the font, so you may wish to sit closer than usual for this session.  I'll wait if you want to move up.
 
 * 
 .background images/ThoseSponsors.png
@@ -34,7 +35,7 @@ http://about.me/rosslarson
 
 * History of Golang
 .background images/Go-Logo_Blue.svg
-: There is some history here.  It started at Google in 2007.  Other stuff too.
+: There is some history here, even though the lanuage is relatively young.  It started at Google in 2007.
 : The authors of Go noticed several trends in the last 10 years or so that Systems Languages were not easily able to take advantage of.
 : Computers are enormously quicker but software development is not faster.
 : Multi-core systems are more common, but it is difficult to write software that takes advantage of the additional resources.
@@ -136,6 +137,9 @@ http://about.me/rosslarson
 .background images/blue-background.jpg
 .image images/delve.png _ 900
 : Go has a tool called delve that helps with debugging of your go code. https://github.com/derekparker/delve
+: You can use it on the command line with `dlv debug`. There are also plugins for most Go editors. https://github.com/derekparker/delve/blob/master/Documentation/EditorIntegration.md
+: Delve supports both local and remote debugging.
+: I'm going to show off the "slices" code in Visual Studio Code with the Delve Plugin.
 
 * Pros and Cons of Golang
 .background images/Go-Logo_Blue.svg
