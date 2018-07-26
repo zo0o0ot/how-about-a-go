@@ -100,6 +100,7 @@ http://about.me/rosslarson
 * Arrays
 .play code/arrays/arrays.go /^func arraysDemo/,/^}/
 : In go, arrays are slightly more limited than in other languages.  Once they have been created, their length cannot be changed.  Nothing can be appended to them, but the values inside of the array can be changed. You can also refer to the range inside of an array like [x:y], but you have to note that the array position in the beginning of the array is included, but the array position at the end gives you everythig UNTIL that array position, NOT INCLUDING the given number.  You can also omit the number to go to either the upper or lower limit.
+: When referring to arrays in a for loop, you can do the rough equivalent of a foreach loop by using range. It returns two values - the location in the array, followed by the contents.
 
 * Slices
 .play code/slices/slices.go /^func slicesDemo/,/^}/
@@ -117,7 +118,9 @@ http://about.me/rosslarson
 
 * Structs
 .play code/structs/structs.go
-: A struct is a collection of fields.  Comparing structs to objects. https://golangbot.com/structs-instead-of-classes/
+: A struct is a collection of fields.  It can also have methods.
+: Q- Is Go Object Oriented? `Yes and no. Although Go has types and methods and allows an object-oriented style of programming, there is no type hierarchy. The concept of “interface” in Go provides a different approach that we believe is easy to use and in some ways more general. There are also ways to embed types in other types to provide something analogous—but not identical—to subclassing. Moreover, methods in Go are more general than in C++ or Java: they can be defined for any sort of data, even built-in types such as plain, “unboxed” integers. They are not restricted to structs (classes). `
+: Comparing structs to objects. https://golangbot.com/structs-instead-of-classes/
 
 * Interfaces
 : Interface notes. https://golang.org/doc/effective_go.html#interfaces_and_types

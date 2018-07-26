@@ -11,6 +11,11 @@ func arraysDemo() {
 	// Array ranges can be referenced, [2:6] refers to array positions 2-5.
 	// Either position in a range can be omitted.
 	fmt.Println(b[6:], "-", b[2:6])
+
+	for x, y := range b { // Range does something similar to foreach.
+		fmt.Printf("%d-%d ", x, y)
+	}
+	fmt.Println("")
 }
 
 func main() {
