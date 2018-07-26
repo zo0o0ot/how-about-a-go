@@ -8,7 +8,7 @@ func slicesDemo() {
 	ri[3] = "you"
 	ri[1] = "gonna"
 	ro := make([]string, len(ri))
-	copy(ro, ri) // Copies contents from one slice into the other.
+	copy(ro, ri) // Copies contents TO one slice FROM the other.
 	ro = append(ro, "down")
 	ri = append(ri, "up", "up", "down", "down")
 	ri = append(ri, "left", "right", "left", "right", "b", "a", "start")
