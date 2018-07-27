@@ -147,6 +147,7 @@ http://about.me/rosslarson
 : Go error documentation - https://golang.org/pkg/errors/ and https://golang.org/doc/effective_go.html#errors
 
 * Fancy Errors!
+.play code/fancy-error/fancy-error.go /START OMIT/,/END OMIT/
 : In addition to customizing the error string, you can also return other relevant information. You can return a struct in the error.
 
 * Errors at Compilation
@@ -210,6 +211,7 @@ http://about.me/rosslarson
 - A Tour of Go
 - Go By Example
 - Just for Func
+- Pluralsight / Lynda courses.
 : There are both free and paid resources for learning Go. I focused a lot of my learning on the Tour of Go (https://tour.golang.org/list) and Go By Example (https://gobyexample.com/).  Free resources can get you pretty far.
 : 7 Common Mistakes in Go - Steve Francia - https://youtu.be/29LLRKIL_TI
 : Go proverbs - http://go-proverbs.github.io/
