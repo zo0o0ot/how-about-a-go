@@ -123,9 +123,20 @@ http://about.me/rosslarson
 : Comparing structs to objects. https://golangbot.com/structs-instead-of-classes/
 
 * Interfaces
-: Interface notes. 
+.code code/interface/interface.go /^type geometry/,/^}/
+.code code/interface/interface.go /^type rect/,/^}/
+.code code/interface/interface.go /^type circle/,/^}/
+: Interfaces are named collections of method signatures. Basically, you indicate what it returns, and the interface doesn't really care how you do it.
 : Links - Golang Interfaces Explained - https://youtu.be/F4wUrj6pmSI 
 : Effective Go- Interfaces - https://golang.org/doc/effective_go.html#interfaces_and_types
+: More explanation of Interfaces - https://medium.com/golangspec/interfaces-in-go-part-i-4ae53a97479c
+
+* Interfaces, Part 2
+.code code/interface/interface.go /START OMIT/,/END OMIT/
+
+* Interfaces, Part 3
+.code code/interface/interface.go /^func measure/,/^}/
+.play code/interface/interface.go /^func main/,/^}/
 
 * Concurrency
 : Concurrency notes.  It's built into Go. https://www.golang-book.com/books/intro/10   Probably need to explain routines as well- https://tour.golang.org/concurrency/1
