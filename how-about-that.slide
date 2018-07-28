@@ -222,6 +222,13 @@ http://about.me/rosslarson
 .image images/gohugo.png
 : Hugo is an excellent static site generator.  I found out about it last year during "The Static Web Revolution" presentation by Steven Hicks at That Conference (https://www.thatconference.com/sessions/session/11195).
 
+* Create a Slack Bot!
+.image images/slack.png
+: You can use Go to create your own Slack Bot!
+: Link - https://www.opsdash.com/blog/slack-bot-in-golang.html
+: Another link - https://medium.com/mercari-engineering/writing-an-interactive-message-bot-for-slack-in-golang-6337d04f36b9
+
+
 * Questions?
 .background images/Go-Logo_Blue.svg
 
