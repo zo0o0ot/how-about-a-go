@@ -122,6 +122,19 @@ http://about.me/rosslarson
 : Q- Is Go Object Oriented? `Yes and no. Although Go has types and methods and allows an object-oriented style of programming, there is no type hierarchy. The concept of “interface” in Go provides a different approach that we believe is easy to use and in some ways more general. There are also ways to embed types in other types to provide something analogous—but not identical—to subclassing. Moreover, methods in Go are more general than in C++ or Java: they can be defined for any sort of data, even built-in types such as plain, “unboxed” integers. They are not restricted to structs (classes). `
 : Comparing structs to objects. https://golangbot.com/structs-instead-of-classes/
 
+* Errors and nil
+.play code/error-creating/error-creating.go
+: You may have noticed that go functions allow multiple return items.  Go takes full advantage of this for its error handling system. Most functions return an error all of the time, assigning it to "nil", which is equivalent to null.  When the error does exist, you can handle the error appropriately. You can create your own error message which includes customizable information.
+: Go error documentation - https://golang.org/pkg/errors/ and https://golang.org/doc/effective_go.html#errors
+
+* Fancy Errors!
+.play code/fancy-error/fancy-error.go /START OMIT/,/END OMIT/
+: In addition to customizing the error string, you can also return other relevant information. You can return a struct in the error.
+
+* Errors at Compilation
+.play -edit code/compilation-error/compilation-error.go
+: Go is relatively picky when it compiles.  It would prefer to tell you about problems as you compile your code as opposed to when you execute your code.
+
 * Interfaces
 .code code/interface/interface.go /^type geometry/,/^}/
 .code code/interface/interface.go /^type rect/,/^}/
@@ -141,22 +154,10 @@ http://about.me/rosslarson
 * Concurrency
 .play -edit code/goroutines/goroutines.go
 : Concurrency allows for a program to be split into manageable chunks that can be executed separately and efficiently.
-: A goroutine is a lightweight thread managed by the Go runtime.   
+: A goroutine is a lightweight thread managed by the Go runtime.
+: There is also something called a channel which allows goroutines to communicate with each other, but explaining that tends to get into the weeds quickly.
 : Links -  https://www.golang-book.com/books/intro/10   Probably need to explain routines as well- https://tour.golang.org/concurrency/1
 : Concurrency in Go video- https://youtu.be/LvgVSSpwND8
-
-* Errors and nil
-.play code/error-creating/error-creating.go
-: You may have noticed that go functions allow multiple return items.  Go takes full advantage of this for its error handling system. Most functions return an error all of the time, assigning it to "nil", which is equivalent to null.  When the error does exist, you can handle the error appropriately. You can create your own error message which includes customizable information.
-: Go error documentation - https://golang.org/pkg/errors/ and https://golang.org/doc/effective_go.html#errors
-
-* Fancy Errors!
-.play code/fancy-error/fancy-error.go /START OMIT/,/END OMIT/
-: In addition to customizing the error string, you can also return other relevant information. You can return a struct in the error.
-
-* Errors at Compilation
-.play -edit code/compilation-error/compilation-error.go
-: Go is relatively picky when it compiles.  It would prefer to tell you about problems as you compile your code as opposed to when you execute your code.
 
 * Testing
 - woo.go
