@@ -12,6 +12,8 @@ import (
 )
 
 func main() {
+	// Note: if running this command from the console, you need to be in the
+	// how-about-a-go/code/go-vision/ directory, since this uses relative pathing.
 	ctx := context.Background()
 
 	// Creates a client.
