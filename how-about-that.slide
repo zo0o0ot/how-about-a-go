@@ -206,6 +206,8 @@ http://about.me/rosslarson
 : Enough theory.  Let's do some projects.
 
 * Make a presentation with Go Present!
+- This presentation is an example!
+.image images/present-notes.png
 : This presentation was made using Go's present tool.
 : I made the presentation (including notes) in a modified version of Markdown, and Go's present tool creates a web server that serves up webpages on my machine that I access via a browser.
 : There's a fancy thing that it also does with websockets to allow me to run code from the browser and display the results.  It's cool.
@@ -215,6 +217,10 @@ http://about.me/rosslarson
 .image images/colly.png
 : Colly is a tool (written in Go) that allows you to scape web pages programmatically in Go.
 : Link to site - http://go-colly.org/
+
+* Create a static website with Hugo!
+.image images/gohugo.png
+: Hugo is an excellent static site generator.  I found out about it last year during "The Static Web Revolution" presentation by Steven Hicks at That Conference (https://www.thatconference.com/sessions/session/11195).
 
 * Questions?
 .background images/Go-Logo_Blue.svg
