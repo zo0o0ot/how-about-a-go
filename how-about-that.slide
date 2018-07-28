@@ -228,6 +228,12 @@ http://about.me/rosslarson
 : Link - https://www.opsdash.com/blog/slack-bot-in-golang.html
 : Another link - https://medium.com/mercari-engineering/writing-an-interactive-message-bot-for-slack-in-golang-6337d04f36b9
 
+* Run in the Cloud, or in the Browser!
+.image images/clark-vision-api.png
+: Google Compute Platform (GCP) and AWS Lamda both support Go. (https://cloud.google.com/go/home) (https://aws.amazon.com/blogs/compute/announcing-go-support-for-aws-lambda/)
+: I was able to create a Vision API label retriever in about 5 minutes on Google Cloud Platform, but a variety of other APIs were available, as well. Code is available in the repo for this presentation, but you'll have to create your own compute instance.
+: Also, Golang 1.11 supports WebAssembly as a target, so if you're looking to run Go code in the browser, that's in the process of happening.
+: Five projects not enough?  Try one a week for a year! https://github.com/kkdai/project52
 
 * Questions?
 .background images/Go-Logo_Blue.svg
@@ -239,8 +245,9 @@ http://about.me/rosslarson
 * Resources for learning Go
 - A Tour of Go
 - Go By Example
-- Just for Func
-- Pluralsight / Lynda courses.
+- Just for Func and other YouTube tutorials / presentations
+- Pluralsight / Lynda courses
 : There are both free and paid resources for learning Go. I focused a lot of my learning on the Tour of Go (https://tour.golang.org/list) and Go By Example (https://gobyexample.com/).  Free resources can get you pretty far.
 : 7 Common Mistakes in Go - Steve Francia - https://youtu.be/29LLRKIL_TI
 : Go proverbs - http://go-proverbs.github.io/
+: Go on Pluralsight - https://www.pluralsight.com/courses/go and on Lynda - https://www.lynda.com/Go-training-tutorials/7052-0.html
