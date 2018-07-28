@@ -139,7 +139,11 @@ http://about.me/rosslarson
 .play code/interface/interface.go /^func main/,/^}/
 
 * Concurrency
-: Concurrency notes.  It's built into Go. https://www.golang-book.com/books/intro/10   Probably need to explain routines as well- https://tour.golang.org/concurrency/1
+.play -edit code/goroutines/goroutines.go
+: Concurrency allows for a program to be split into manageable chunks that can be executed separately and efficiently.
+: A goroutine is a lightweight thread managed by the Go runtime.   
+: Links -  https://www.golang-book.com/books/intro/10   Probably need to explain routines as well- https://tour.golang.org/concurrency/1
+: Concurrency in Go video- https://youtu.be/LvgVSSpwND8
 
 * Errors and nil
 .play code/error-creating/error-creating.go
