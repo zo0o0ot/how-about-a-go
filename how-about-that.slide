@@ -14,7 +14,7 @@ Software Developer, WTS Paradigm
 rosslarson@gmail.com
 http://about.me/rosslarson
 @rosslarsonWI
-: GitHub repo for this presentation - 
+: GitHub repo for this presentation - https://github.com/zo0o0ot/how-about-a-go
 
 * 
 .background images/ThatBranding.png
@@ -91,10 +91,11 @@ http://about.me/rosslarson
 * If, Else, and Switch
 .play -edit code/if-else-switch/if-else-switch.go /^func itsNine/,/^}/
 : If, Else, and Switch statements work like most other languages.  The parentheses are not required, but the braces are. One note - There is no ternary if (?:) in Go. You have to write out the whole if statement.
+: Switch statements exist, too.  They seemed to work how I expected them to work.
 
 * For loops
 .play -edit code/for-loops/for-loops.go /^func theCount/,/^}/
-: For loops are pretty versatile in Go. It does "for declaration;condition;incrementer".  However, you can omit some or all of these arguments.
+: For loops are pretty versatile in Go. The syntax goes "for declaration;condition;incrementer".  However, you can omit some or all of these arguments.
 : Therefore, for is also Go's while.  Be careful for infinite loops! I made at least one while creating this sample code.
 
 * Arrays
@@ -109,7 +110,7 @@ http://about.me/rosslarson
 
 * Maps
 .play code/maps/maps.go /^func showSomeMaps/,/^}/
-: Maps are a key value store.  They are similar to slices, but you can name the keys instead of needed to use numbers.  They are like dictionaries in python and HashMaps in C#. Maps do not store these key/value pairs in any particular order, so if you print out the whole map, the order of the keys will vary.
+: Maps are a key value store.  They are similar to slices, but you can name the keys instead of needing to use numbers.  They are like dictionaries in python and HashMaps in C#. Maps do not store these key/value pairs in any particular order, so if you print out the whole map, the order of the keys will vary.
 
 * Pointers
 .play code/pointers/pointers.go
@@ -189,11 +190,12 @@ http://about.me/rosslarson
 - "Idiomatic Go"
 - Relatively simple Concurrency
 - Built-in webserver
-- Performance
+- Quick Performance
 - Garbage Collection
 - Integrated Testing and Benchmarking
 : Golang has clearly defined standards and formatting suggestions.  There's even a command called `gofmt()` that will format your code the "correct" way.  Many golang editors will do this automatically as you save the file.
 : The language was designed to have "one correct way" of doing things, which is referred to as "Idiomatic Go". One of the stated goals was to make legacy code easier to read and maintain.
+: Links - https://golang.org/doc/effective_go.html ---https://github.com/golang/go/wiki/CodeReviewComments
 
 * Golang Cons
 - Simplicity
@@ -201,6 +203,7 @@ http://about.me/rosslarson
 - Libraries and support are still a work in progress
 - "Idiomatic Go" and the Somewhat opinionated community
 - Dependency management is still somewhat new
+- Not object oriented in the traditional sense
 : It's not all sunshine and rainbows here. Though the standard libraries are quite good, third party libaries may not be to the same quality and quantity that you are used to with other languages.
 : A drawback to the "Idomatic Go" concept is that since there is one "best" way to do many things in Go, you may run into a lot of people who will tell you that you're doing it wrong.  Also, the Golang Slack team was a firehose of information, and when I asked a question there, it was completely ignored.
 : Go dep (the official depedency management tool) is still in "experimental form".  See https://golang.github.io/dep/ --- Go 1.11 adds preliminary support for a new concept called “modules,” an alternative to GOPATH with integrated support for versioning and package distribution. It's exciting, but coming from other languages, you may be expecting a more mature set of tools to manage dependencies and packages.
