@@ -183,22 +183,33 @@ http://about.me/rosslarson
 .image images/go-gopher.gif
 : Let's start with the Pros.  This may be highly subjective.
 
-* Coding Standards and Formatting suggestions
-- gofmt()
+* Golang Pros
+- Simplicity
+- Automatic code formatting with gofmt()
 - "Idiomatic Go"
-
+- Relatively simple Concurrency
+- Built-in webserver
+- Performance
+- Garbage Collection
+- Integrated Testing and Benchmarking
 : Golang has clearly defined standards and formatting suggestions.  There's even a command called `gofmt()` that will format your code the "correct" way.  Many golang editors will do this automatically as you save the file.
 : The language was designed to have "one correct way" of doing things, which is referred to as "Idiomatic Go". One of the stated goals was to make legacy code easier to read and maintain.
 
-* Cons
-: It's not all sunshine and rainbows here.
+* Golang Cons
+- Simplicity
+- Unclear niche
+- Libraries and support are still a work in progress
+- "Idiomatic Go" and the Somewhat opinionated community
+- Dependency management is still somewhat new
+: It's not all sunshine and rainbows here. Though the standard libraries are quite good, third party libaries may not be to the same quality and quantity that you are used to with other languages.
+: A drawback to the "Idomatic Go" concept is that since there is one "best" way to do many things in Go, you may run into a lot of people who will tell you that you're doing it wrong.  Also, the Golang Slack team was a firehose of information, and when I asked a question there, it was completely ignored.
+: Go dep (the official depedency management tool) is still in "experimental form".  See https://golang.github.io/dep/ --- Go 1.11 adds preliminary support for a new concept called “modules,” an alternative to GOPATH with integrated support for versioning and package distribution. It's exciting, but coming from other languages, you may be expecting a more mature set of tools to manage dependencies and packages.
 
 * Tools of the Trade
 .background images/Go-Logo_Blue.svg
 : There are a few options for Go development.  I've been doing most of my coding with Visual Studio Code and the associated golang plugins. https://code.visualstudio.com/docs/languages/go  Atom has similar extensions, but VS Code seemed to work for my needs.
 : I gave Goland, the JetBrains Go IDE, a try.  It seemed nice, but it may be a little heavier than I needed as a beginning dev.  It's possible that it does some things better, such as debugging or refactoring. https://www.jetbrains.com/go/
-: LiteIDE is a cross-platform editor for Go that's under development.  One thing that s nice about it is that it does syntax highlighting of Go's slide format. I used it for that. https://github.com/visualfc/liteide
-: (Don't mention this one) Limetext is an open-source alternative to SublimeText that is written in Go.  It's still under development and nt ready for daily use, but it looks very promising.  http://limetext.org/
+: LiteIDE is a cross-platform editor for Go that's under development.  One thing that is nice about it is that it does syntax highlighting of Go's slide format. I used it for that. https://github.com/visualfc/liteide
 : Official wiki of Go Editors and IDEs: https://github.com/golang/go/wiki/IDEsAndTextEditorPlugins
 
 * Suggested Projects
