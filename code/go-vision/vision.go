@@ -11,7 +11,7 @@ import (
 	"golang.org/x/net/context"
 )
 
-func test() {
+func sample() {
 	// This is a sample of code.
 }
 

@@ -28,7 +28,7 @@ http://about.me/rosslarson
 - The History of Golang
 - Projects that use Golang
 - General language overview
-.code code/go-vision/vision.go /^func test/,/^}/
+.code code/go-vision/vision.go /^func sample/,/^}/
 - Pros and Cons of Golang
 - Tools to code with Go
 - Project suggestions
