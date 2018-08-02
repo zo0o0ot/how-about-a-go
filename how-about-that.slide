@@ -168,6 +168,7 @@ http://about.me/rosslarson
 - woo_test.go
 .code code/builtin-testing/woo_test.go
 : Testing is built into go. If you create a file with the same name and append "_test" to the file, it can automatically run the tests. Test functions have the word test before them. For more info - https://golang.org/pkg/testing/ 
+: (Open woo_test in VS Code to show tests.)
 : The Go compiler and linker will not ship your test files in any binaries it produces.
 
 * Debugging with Delve
@@ -195,6 +196,7 @@ http://about.me/rosslarson
 - Quick Performance
 - Garbage Collection
 - Integrated Testing and Benchmarking
+: Go was not designed to be a "kitchen sink" language. One of the stated goals was to produce straightforward, readable code.
 : Golang has clearly defined standards and formatting suggestions.  There's even a command called `gofmt()` that will format your code the "correct" way.  Many golang editors will do this automatically as you save the file.
 : The language was designed to have "one correct way" of doing things, which is referred to as "Idiomatic Go". One of the stated goals was to make legacy code easier to read and maintain.
 : Links - https://golang.org/doc/effective_go.html ---https://github.com/golang/go/wiki/CodeReviewComments
@@ -213,7 +215,7 @@ http://about.me/rosslarson
 * Tools of the Trade
 .background images/Go-Logo_Blue.svg
 : There are a few options for Go development.  I've been doing most of my coding with Visual Studio Code and the associated golang plugins. https://code.visualstudio.com/docs/languages/go  Atom has similar extensions, but VS Code seemed to work for my needs.
-: I gave Goland, the JetBrains Go IDE, a try.  It seemed nice, but it may be a little heavier than I needed as a beginning dev.  It's possible that it does some things better, such as debugging or refactoring. https://www.jetbrains.com/go/
+: I gave GoLand, the JetBrains Go IDE, a try.  It seemed nice, but it may be a little heavier than I needed as a beginning dev.  It's possible that it does some things better, such as finding references to functions or refactoring. https://www.jetbrains.com/go/
 : LiteIDE is a cross-platform editor for Go that's under development.  One thing that is nice about it is that it does syntax highlighting of Go's slide format. I used it for that. https://github.com/visualfc/liteide
 : Official wiki of Go Editors and IDEs: https://github.com/golang/go/wiki/IDEsAndTextEditorPlugins
 
