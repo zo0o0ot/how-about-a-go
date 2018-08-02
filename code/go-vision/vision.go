@@ -11,6 +11,10 @@ import (
 	"golang.org/x/net/context"
 )
 
+func test() {
+	// This is a sample of code.
+}
+
 func main() {
 	// Note: if running this command from the console, you need to be in the
 	// how-about-a-go/code/go-vision/ directory, since this uses relative pathing.

@@ -19,8 +19,6 @@ http://about.me/rosslarson
 * 
 .background images/ThatBranding.png
 : We're at That Conference!
-: As a note, there is going to be some code on slides in my session.  I am unable to change the size of the font, so you may wish to sit closer than usual for this session.  I'll wait if you want to move up.
-: I have a screen magnifier that could be used if it's a real emergency.
 
 * 
 .background images/ThoseSponsors.png
@@ -30,9 +28,12 @@ http://about.me/rosslarson
 - The History of Golang
 - Projects that use Golang
 - General language overview
+.code code/go-vision/vision.go /^func test/,/^}/
 - Pros and Cons of Golang
 - Tools to code with Go
 - Project suggestions
+: As a note, there is going to be some code on slides in my session.  I am unable to change the size of the font, so you may wish to sit closer than usual for this session.  I'll wait if you want to move up.
+: I have a screen magnifier that could be used if it's a real emergency.
 : We are going over some stuff here.  It is going to be awesome.
 
 * History of Golang
@@ -91,6 +92,7 @@ http://about.me/rosslarson
 * If, Else, and Switch
 .play -edit code/if-else-switch/if-else-switch.go /^func itsNine/,/^}/
 : If, Else, and Switch statements work like most other languages.  The parentheses are not required, but the braces are. One note - There is no ternary if (?:) in Go. You have to write out the whole if statement.
+: In Go, you can initialize a variable inside the if statement before you check it.  If you do it that way, the variable is scoped to the if statement.
 : Switch statements exist, too.  They seemed to work how I expected them to work.
 
 * For loops
