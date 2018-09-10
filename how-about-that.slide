@@ -38,7 +38,7 @@ http://about.me/rosslarson
 
 * History of Golang
 .background images/Go-Logo_Blue.svg
-: There is some history here, even though the lanuage is relatively young.  It started at Google in 2007.
+: There is some history here, even though the language is relatively young.  It started at Google in 2007.
 : The authors of Go noticed several trends in the last 10 years or so that Systems Languages were not easily able to take advantage of.
 : Computers are enormously quicker but software development is not faster.
 : Multi-core systems are more common, but it is difficult to write software that takes advantage of the additional resources.
@@ -102,7 +102,7 @@ http://about.me/rosslarson
 
 * Arrays
 .play code/arrays/arrays.go /^func arraysDemo/,/^}/
-: In go, arrays are slightly more limited than in other languages.  Once they have been created, their length cannot be changed.  Nothing can be appended to them, but the values inside of the array can be changed. You can also refer to the range inside of an array like [x:y], but you have to note that the array position in the beginning of the array is included, but the array position at the end gives you everythig UNTIL that array position, NOT INCLUDING the given number.  You can also omit the number to go to either the upper or lower limit.
+: In go, arrays are slightly more limited than in other languages.  Once they have been created, their length cannot be changed.  Nothing can be appended to them, but the values inside of the array can be changed. You can also refer to the range inside of an array like [x:y], but you have to note that the array position in the beginning of the array is included, but the array position at the end gives you everything UNTIL that array position, NOT INCLUDING the given number.  You can also omit the number to go to either the upper or lower limit.
 : When referring to arrays in a for loop, you can do the rough equivalent of a foreach loop by using range. It returns two values - the location in the array, followed by the contents.
 
 * Slices
@@ -208,9 +208,9 @@ http://about.me/rosslarson
 - "Idiomatic Go" and the Somewhat opinionated community
 - Dependency management is still somewhat new
 - Not object oriented in the traditional sense
-: It's not all sunshine and rainbows here. Though the standard libraries are quite good, third party libaries may not be to the same quality and quantity that you are used to with other languages.
-: A drawback to the "Idomatic Go" concept is that since there is one "best" way to do many things in Go, you may run into a lot of people who will tell you that you're doing it wrong.  Also, the Golang Slack team was a firehose of information, and when I asked a question there, it was completely ignored.
-: Go dep (the official depedency management tool) is still in "experimental form".  See https://golang.github.io/dep/ --- Go 1.11 adds preliminary support for a new concept called “modules,” an alternative to GOPATH with integrated support for versioning and package distribution. It's exciting, but coming from other languages, you may be expecting a more mature set of tools to manage dependencies and packages.
+: It's not all sunshine and rainbows here. Though the standard libraries are quite good, third party libraries may not be to the same quality and quantity that you are used to with other languages.
+: A drawback to the "Idiomatic Go" concept is that since there is one "best" way to do many things in Go, you may run into a lot of people who will tell you that you're doing it wrong.  Also, the Golang Slack team was a firehose of information, and when I asked a question there, it was completely ignored.
+: Go dep (the official dependency management tool) is still in "experimental form".  See https://golang.github.io/dep/ --- Go 1.11 adds preliminary support for a new concept called “modules,” an alternative to GOPATH with integrated support for versioning and package distribution. It's exciting, but coming from other languages, you may be expecting a more mature set of tools to manage dependencies and packages.
 
 * Tools of the Trade
 .background images/Go-Logo_Blue.svg
@@ -233,7 +233,7 @@ http://about.me/rosslarson
 
 * Do some web scraping with Colly!
 .image images/colly.png
-: Colly is a tool (written in Go) that allows you to scape web pages programmatically in Go.
+: Colly is a tool (written in Go) that allows you to scrape web pages programmatically in Go.
 : Link to site - http://go-colly.org/
 
 * Create a static website with Hugo!
